@@ -8,9 +8,9 @@ from whois import *
 ROOT_DIR = 'results'
 create_dir ( ROOT_DIR )
 #call all the functions
-print("Scan Done111111!!")
+
 def gather_info( name, url ):
-    print("Scan Done!!")
+
     robots_txt = get_robots_txt ( url )
     domain_name = get_domain_name ( url )
     whois = get_whois ( domain_name )
@@ -28,4 +28,4 @@ def create_report( name, url, domain_name, nmap, robots_txt, whois ):
     write_file( project_dir + "/whois.txt", whois )
 
     print("Scan Done!!")
-gather_info("athinorama","http://www.athinorama.gr/")
+gather_info("google","https://www.google.com/")
